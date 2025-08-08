@@ -8,6 +8,7 @@ const acceptButton = page.getByRole('button', { name: 'Consent' });
 if (await acceptButton.isVisible()) {
     await acceptButton.click();
 }
+
 await page.getByRole('button', { name: 'Set Timer' }).click();
 await page.getByLabel('Minutes').click();
 await page.getByLabel('Minutes').selectOption('10');
