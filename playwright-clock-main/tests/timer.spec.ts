@@ -14,6 +14,5 @@ await page.getByLabel('Minutes').selectOption('10');
 await page.getByRole('button', { name: 'Start' }).click();
 
 //await page.getByRole('button', { name: 'Reset' }).click();
-
 await page.getByRole('button', { name: 'Stop' }).click();
 });
