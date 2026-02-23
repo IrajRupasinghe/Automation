@@ -1,3 +1,4 @@
+/*Copyright (c) Iraj Rupasinghe*/
 import { expect, type Locator, type Page } from '@playwright/test';
 import datafile from "../data/data.json";
 
