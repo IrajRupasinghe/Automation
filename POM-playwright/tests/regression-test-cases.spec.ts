@@ -1,3 +1,4 @@
+/*Copyright (c) Iraj Rupasinghe*/
 import { test, expect } from '@playwright/test';
 import { PlaywrightDevPage } from '../base/playwright-dev-page';
 
