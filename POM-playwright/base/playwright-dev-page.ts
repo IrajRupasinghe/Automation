@@ -32,8 +32,17 @@ export class PlaywrightDevPage {
   }
 
   async pageObjectModel() {
-    await this.getStarted();
-    await this.pomLink.click();
+  //commit for impliment hamburger for mobile browser
+  //await this.getStarted();
+  //await this.pomLink.click();
+  
+    // In here only consider click event of that hamburger menu
+    await this.page.getByLabel('Toggle navigation bar').click();
+    await this.page.locator('xpath=/html/body/div/nav/div[3]/div[2]/div[1]/ul/li[1]').click();
+
+    //open hamburger again and navigate to Page object model page
+    await this.page.getByLabel('Toggle navigation bar').click();
+    await this.page.locator('xpath=/html/body/div/nav/div[3]/div[2]/div[2]/ul/li[6]/ul/li[29]').click();
   }
 
   // to close the open browser
