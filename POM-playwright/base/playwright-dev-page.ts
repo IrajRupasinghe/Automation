@@ -35,6 +35,13 @@ export class PlaywrightDevPage {
     await this.getStarted();
     await this.pomLink.click();
   }
+  // screenshots
+  async screenshots() {
+    //screenshot of showing area
+    await this.page.screenshot({ path: 'C:/Users/irajr/Software QA/Automation/POM-playwright-web/screenshots/screenshot.png' });
+    //Full page screenshots
+    await this.page.screenshot({ path: 'C:/Users/irajr/Software QA/Automation/POM-playwright-web/screenshots/screenshotfp.png', fullPage: true });
+  }
 
   // to close the open browser
   async closebrowser(){
