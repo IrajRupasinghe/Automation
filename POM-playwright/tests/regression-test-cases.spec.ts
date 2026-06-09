@@ -10,6 +10,12 @@ test('getting started should contain table of contents, tes01', async ({ page })
 
 const currentUrl = page.url();
 const expectedUrl = 'https://playwright.dev/docs/intro#installing-playwright';
+await playwrightDev.screenshots();
+
+//screenshot
+//await page.screenshot({ path: 'C:/Users/irajr/Software QA/Automation/POM-playwright-web/screenshots/screenshot.png' });
+//Full page screenshots
+//await page.screenshot({ path: 'C:/Users/irajr/Software QA/Automation/POM-playwright-web/screenshots/screenshotfp.png', fullPage: true });
 
   if (currentUrl === expectedUrl) { console.log('Page redirected to the correct site.');} 
   else { console.log('Page not redirected ERORR!');}
