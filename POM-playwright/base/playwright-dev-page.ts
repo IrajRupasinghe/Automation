@@ -38,9 +38,9 @@ export class PlaywrightDevPage {
   // screenshots
   async screenshots() {
     //screenshot of showing area
-    await this.page.screenshot({ path: 'C:/Users/irajr/Software QA/Automation/POM-playwright-web/screenshots/screenshot.png' });
+    await this.page.screenshot({ path: 'screenshot.png' });
     //Full page screenshots
-    await this.page.screenshot({ path: 'C:/Users/irajr/Software QA/Automation/POM-playwright-web/screenshots/screenshotfp.png', fullPage: true });
+    await this.page.screenshot({ path: 'screenshotfp.png', fullPage: true });
   }
 
   // to close the open browser
